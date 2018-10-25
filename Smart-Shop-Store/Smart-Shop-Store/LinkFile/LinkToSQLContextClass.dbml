@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Smart-Shop-Store" Class="LinkToSQLContextClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DIARABI\SQLEXPRESS;Initial Catalog=Smart-Shop-Store;User ID=Smart-Shop-Store-User" SettingsObjectName="Smart_Shop_Store.Properties.Settings" SettingsPropertyName="Smart_Shop_StoreConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.SelectAllProducts" Method="SelectAllProducts">
+    <ElementType Name="SelectAllProductsResult">
+      <Column Name="IdProduit" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="NomProduit" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PrixProduit" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Stock" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageProduit" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Promo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Marque" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

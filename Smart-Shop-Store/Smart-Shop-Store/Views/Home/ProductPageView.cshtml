@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model List<Smart_Shop_Store.LinkFile.SelectAllProductsResult>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/StyleSheet/ProductPageViewStyle.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>ProductPageView</title>
+</head>
+<body>
+    <div>
+        @{
+            foreach (var MyProduct in Model)
+            {
+
+                <img class="ImageProd" />
+                <div class="ProdInfo">
+
+                    <label class="LabelProduct">Nom:</label><span>@MyProduct.NomProduit</span><br />
+                    <label class="LabelProduct">Marque:</label><span>@MyProduct.Marque</span><br />
+                    <label class="LabelProduct">Prix:</label><span>@MyProduct.PrixProduit</span><br />
+                    <label class="LabelProduct">Stock:</label><span>@MyProduct.Stock</span><br />
+
+                </div><br />
+                <hr />
+            }
+        }
+    </div>
+</body>
+</html>
